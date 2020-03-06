@@ -1,5 +1,10 @@
-@use '@material/textfield/mdc-text-field';
+@use '@material/textfield/mdc-text-field' as _;
+@use '@material/textfield' as mdc-text-field;
 
 body {
   font-family: sans-serif;
+}
+
+.mdc-text-field {
+  @include mdc-text-field.density(-1);
 }
