@@ -5,6 +5,11 @@ body {
   font-family: sans-serif;
 }
 
-.mdc-text-field {
-  @include mdc-text-field.density(-1);
-}
+$levels: (0, 1, 2, 3);
+
+@each $level in $levels {
+  .mdc-text-field.density-#{$level} {
+    @include mdc-text-field.density(-$level);
+  }
+} 
+
