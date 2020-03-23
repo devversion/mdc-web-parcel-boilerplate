@@ -8,7 +8,8 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
-    "@material/textfield": "6.0.0-canary.fe79de07d.0"
+    "@material/textfield": "canary",
+    "@material/list": "canary"
   },
   "devDependencies": {
     "@babel/core": "7.2.0",

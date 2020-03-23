@@ -17,11 +17,37 @@
 
     <label class="mdc-text-field">
       <span class="mdc-text-field__ripple"></span>
-      <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id"
-      />
-      <span class="mdc-floating-label" id="my-label-id">Password</span>
+      <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+      <span class="mdc-floating-label" id="my-label-id">Hint text</span>
       <span class="mdc-line-ripple"></span>
     </label>
+
+
+    <label class="mdc-text-field mdc-text-field--no-label">
+      <span class="mdc-text-field__ripple"></span>
+      <input class="mdc-text-field__input" type="text" placeholder="Hello">
+      <span class="mdc-line-ripple"></span>
+    </label>
+
+    <label class="mdc-text-field mdc-text-field--textarea">
+      <textarea class="mdc-text-field__input" aria-labelledby="my-label-id" rows="8" cols="40"></textarea>
+      <div class="mdc-notched-outline">
+        <div class="mdc-notched-outline__leading"></div>
+        <div class="mdc-notched-outline__notch">
+          <label class="mdc-floating-label" id="my-label-id">Textarea Label</label>
+        </div>
+        <div class="mdc-notched-outline__trailing"></div>
+      </div>
+    </label>
+
+    <ul class="mdc-list mdc-list--two-line">
+      <li class="mdc-list-item" tabindex="0">
+        <span class="mdc-list-item__text">
+          <span class="mdc-list-item__primary-text">Two-line item</span>
+          <span class="mdc-list-item__secondary-text">Secondary text</span>
+        </span>
+      </li>
+    </ul>
 
     <script src="src/index.js"></script>
   </body>
