@@ -1,7 +1,15 @@
-@use '@material/textfield/mdc-text-field' as _text_field;
-@use '@material/list/mdc-list' as _list;
-@use '@material/textfield' as mdc-text-field;
-@use '@material/list' as mdc-list;
+@use '@material/list/evolution-variables' with (
+  $one-line-item-density-scale: minimum,
+  $two-line-item-density-scale: minimum,
+
+  $three-line-item-density-scale: minimum,
+
+);
+
+@use '@material/list/evolution-mixins' as mdc-list;
+
+@include mdc-list.without-ripple();
+@include mdc-list.with-ripple();
 
 body {
   font-family: sans-serif;
@@ -11,10 +19,10 @@ $levels: (0, -1, -2, -3, minimum);
 
 @each $level in $levels {
   .mdc-text-field.density-#{$level} {
-    @include mdc-text-field.density($level);
+   // @include mdc-text-field.density($level);
   }
   .mdc-list.density-#{$level} {
-    @include mdc-list.single-line-density($level);
+  //  @include mdc-list.single-line-density($level);
   }
 } 
 
